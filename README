@@ -18,6 +18,8 @@ password-less access to roll out the rest of your packages.
 
 I've been using this for about two(2) years, and decided it was time to share.
 
+It will iterate multiple checkboxed commands over multiple checkboxed hosts!
+
 If you're afraid to run this as root, command out the root check in the primary phor script.
 
 Now Go PHOR IT!  It's PHOR I.T.
