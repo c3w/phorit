@@ -1,5 +1,5 @@
 PHORIT v0.1
-http://github.com/c3w/phor
+http://github.com/c3w/phorit
 *roll your own system*
 
 This is a 'dialog' based system rollout script, for things like ssh keys, crontabs, snmp configs, etc etc.
