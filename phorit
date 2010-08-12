@@ -1,0 +1,17 @@
+#!/bin/bash
+
+###
+## PHORIT
+## c3w@juicypop.net
+
+if [ "${USER}" != "root" ]; then { echo "PHORIT must be run as root.  exiting"; exit; }; fi
+
+if [ ! -f /usr/bin/dialog ]; then { echo "PHORIT requires 'dialog' to installed"; exit; }; fi
+
+if [ "${1}" ]; then { export _toggle="${1}"; } else { export _toggle="off"; }; fi
+
+. inc/basic.inc
+
+echo "servers" > $tempfile
+
+. inc/phorit.inc servers

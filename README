@@ -1,0 +1,25 @@
+PHORIT v0.1
+http://github.com/c3w/phor
+*roll your own system*
+
+This is a 'dialog' based system rollout script, for things like ssh keys, crontabs, snmp configs, etc etc.
+
+I KNOW there are config-based rollout packages out there, but as usual, I like to roll my own.
+
+Usage is simple.  create a command in commands/, put your files in packages/ and run 'phor'
+
+The 2nd line of your command should look like #.# oneworddescription
+This is passed into dialog so you know what command you're about to run.
+
+PHOR uses your local /etc/hosts to derive a list of hosts to roll to - check off each one you want, and blammo.
+
+I've included some sample commands/packages, including sshkeys, which you generally want to run first so you have
+password-less access to roll out the rest of your packages.
+
+I've been using this for about two(2) years, and decided it was time to share.
+
+If you're afraid to run this as root, command out the root check in the primary phor script.
+
+Now Go PHOR IT!  It's PHOR I.T.
+
+Chas.
